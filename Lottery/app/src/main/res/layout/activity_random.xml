@@ -9,9 +9,15 @@
     <LinearLayout
         android:layout_width="395dp"
         android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -53,17 +59,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="randomagain"
                 android:background="#009688"
+                android:onClick="randomagain"
                 app:srcCompat="@android:drawable/stat_notify_sync_noanim" />
 
             <ImageView
                 android:id="@+id/Back"
-                android:onClick="Backto"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#FFEB3B"
+                android:onClick="Backto"
                 app:srcCompat="@android:drawable/ic_menu_revert" />
         </LinearLayout>
     </LinearLayout>
